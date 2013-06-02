@@ -69,7 +69,7 @@
 <li>
 <strong>Data Wrangler</strong>, <strong>Composer</strong>: <a href="http://twitter.com/mrjosh9000">Josh Deprez</a> – mathematician, developer, musician.</li>
 <li>
-<strong>Visual Designer</strong>, <strong>Game Designer</strong>: <a href="http://twitter.com/ducky_tape">Eloise Macdonald-Meyer</a> – farming usurer. </li>
+<strong>Visual Designer</strong>, <strong>Game Designer</strong>: <a href="http://twitter.com/ducky_tape">Eloise Macdonald-Meyer</a> – farming usurer, Super Taco deliverer, editing, student, youngling. </li>
 <li>
 <strong>Producer</strong>: <a href="http://twitter.com/parisba">Paris Buttfield-Addison</a> – game designer, mobile developer, PhD candidate at UTAS, author for O'Reilly Media, co-founder of Secret Lab.</li>
 <li>
@@ -117,6 +117,7 @@ All rights reserved.</p>
 <li>Excel - used for maniuplation of datasets.</li>
 <li>ImageMagick - Automated image creation and image processing.</li>
 <li>AWK SED and other UNIX tools (eg. join) - used for Australian and ABS data maniuplation.</li>
+<li>Custom CSV to JSON parser - built in Objective-C using JSONKit and CHCSV</li>
 </ul><h1>
 <a name="development-approach" class="anchor" href="#development-approach"><span class="octicon octicon-link"></span></a>Development Approach</h1>
 
@@ -143,6 +144,8 @@ All rights reserved.</p>
 <a name="data-sets" class="anchor" href="#data-sets"><span class="octicon octicon-link"></span></a>Data Sets</h1>
 
 <ul>
+<li>
+<a href="https://auspost.com.au/postcodedata/full/user/12195/download.html?id=vv%2BQXF57F6G19EKVcPZHlB%2F1%2FANp6aHS7jdZoOtmumY%3D">Australian Post</a> - Used to identify localities to link with the ABS data for the calculation of a players starting capital.</li>
 <li>
 <a href="http://opendata.linkdigital.com.au/dataset/appliance-energy-ratings">Appliance Energy Ratings</a> – energy usage and efficiency rating of common household appliances such as air conditioners.</li>
 <li>
@@ -171,6 +174,9 @@ All rights reserved.</p>
 <li>We wanted to (and even got the basics of) the data parsed to collect realtime electrical data costs and use this to influence the cost of appliances on a location by location basis.</li>
 <li>We wanted to have people select their exact suburb and get given an income based on that suburbs average income.</li>
 <li>We wanted to put in house upgrades such as solar panels or insulation that would improve the appliances or make them cheaper, the efficacy of the upgrades was going to be based on real world weather data from bom.gov.au</li>
+<li>We wanted to implement a system of appliance rental, while cheaper than purchasing an appliance, the appliance only lasts one turn. We also wanted to have an emergency store, accessible at any time, but the same appliances would be much more expensive than at the normal store, which can only be used during the buying phase.</li>
+<li>We wanted implement moving house, where you can buy a new house in a different neighbourhood. A house in a better neighbourhood, while expensive would increase the household income according to suburb average income data.</li>
+  
 </ul><h1>
 <a name="next-steps" class="anchor" href="#next-steps"><span class="octicon octicon-link"></span></a>Next Steps</h1>
 
@@ -210,7 +216,7 @@ The phases are as follows:</p>
 <h4>
 <a name="the-battle-phase" class="anchor" href="#the-battle-phase"><span class="octicon octicon-link"></span></a>The Battle Phase</h4>
 
-<p>The Battle Phase represents a year of hard back and forth whitegood combat and consists of two stages of attacings, defending and unflooping in the order shown below:</p>
+<p>The Battle Phase represents a year of hard, back and forth, whitegood combat. It consists of two stages of attacking, defending and unflooping in the order shown below:</p>
 
 <ol>
 <li>Player 1 Attacks</li>
@@ -302,7 +308,7 @@ Your House is your fortress and base of operations in the war against your neigh
 <p>Appliance Slots show how big your House is and how many Appliances you can hold. Each slot has a Type which corresponds to the Appliance Type, so a TV can only go into a TV slot, a Dishwasher into a Dishwasher slot and so on.</p>
 
 <h4>
-<a name="upgarding-your-house" class="anchor" href="#upgarding-your-house"><span class="octicon octicon-link"></span></a>Upgarding your House</h4>
+<a name="upgrading-your-house" class="anchor" href="#upgrading-your-house"><span class="octicon octicon-link"></span></a>Upgarding your House</h4>
 
 <p>Sometimes your House just isn't big enough, from the Store you are able to buy an Extension to your House. The cost of the Extension is removed from your Money.</p>
 
@@ -320,7 +326,9 @@ Your House is your fortress and base of operations in the war against your neigh
 <a name="flooping" class="anchor" href="#flooping"><span class="octicon octicon-link"></span></a>Flooping</h3>
 
 <p>Flooping and Unflooping is how you show which Appliances are engaged. To Floop an Appliance rotate it 90 degrees and to Unfloop, rotate it back 90 degrees. A flooped Appliance can not be used until it is Unflooped.</p>
-      </section>
+
+  
+</section>
     </div>
 
     <!-- FOOTER  -->
