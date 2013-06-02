@@ -38,22 +38,17 @@
 
 <p>Marvellous Ultimate Appliance is an electronic card game designed to help raise awareness of the energy consumed by common household appliances. Drawing on the data provided by the E3 Program (<a href="http://www.energyrating.gov.au">http://www.energyrating.gov.au</a>), the game is inspired by popular battle card games such as “Magic: The Gathering”; the data is used to provide stats for cards, representing each appliance in the E3 Program database. </p>
 
-<p>The key pieces of data used are the energy star rating, capacity, and running cost (derived from the kWh consumption per year). After exploring the available datasets, the team conceived the project as a way of making people more aware of the power consumption, energy usage, and cost-to-capacity implications of typical consumer appliances. The game is styled as a battle of appliances between neighbours, competing to spend their money on the largest, most efficient, and effective appliances. The dataset used was intriguing, because whilst extremely interesting, it was not presented in a way that made the team compelled to understand it, or make use of the knowledge it gave them. Therefore, this project presents components of the data in entertaining and highly compelling ways. It is hoped that this vivid presentation will inspire players of the game to learn and understand about their appliances, and how they impact energy usage and its flow-on effects. We made it into a game!</p>
-
+<p>The key pieces of data used are the energy star rating, capacity, and running cost (derived from the kWh consumption per year). The project was conceived by the team after exploring the available datasets, as a way of making people more aware of the power consumption, energy usage, and cost-to-capacity implications of typical consumer appliances. The game is styled as a battle of appliances between neighbours, competing to spend their money on the largest, most efficient, and effective appliances. The dataset used was intriguing, because whilst extremely interesting, it was not presented in a way that made the team compelled to understand it, or make use of the knowledge it gave them. Therefore, this project presents components of the data in entertaining and highly compelling ways. It is hoped that this vivid presentation will inspire players of the game to learn and understand about their appliances, and how they impact energy usage and its flow-on effects. We made it into a game!</p>
 
 <h1>
-<a name="play-the-game" class="anchor" href="#play-the-game"><span class="octicon octicon-link"></span></a>Why our Project is Special</h1>
+<a name="play-the-game" class="anchor" href="#play-the-game"><span class="octicon octicon-link"></span></a>Play the Game</h1>
 
 <ul>
-<li>A full game implemented over the GovHack weekend</li>
-<li>Original music and sound effects created over the GovHack weekend</li>
-<li>Extensive original art and visuals created over the GovHack weekend</li>
-<li>A fun game built out of dense, but useful, data</li>
-<li>A way to raise awareness of important issues through video games</li>
-</ul>
-
-
-<h1>
+<li>On the web (<a href="http://unity3d.com/webplayer/">Unity web player required</a>) – TBD.</li>
+<li>Download for Mac – TBD.</li>
+<li>Download for Windows – TBD.</li>
+<li>Download for Ubuntu – TBD.</li>
+</ul><h1>
 <a name="team" class="anchor" href="#team"><span class="octicon octicon-link"></span></a>Team</h1>
 
 <p>The team is made up of game designers, programmers, mathematicians, musicians, old-school UNIX users, artists, and data wranglers. The whole team are, or have been, students or staff at the University of Tasmania.</p>
@@ -74,24 +69,119 @@
 <li>
 <strong>Data Wrangler</strong>, <strong>Composer</strong>: <a href="http://twitter.com/mrjosh9000">Josh Deprez</a> – mathematician, developer, musician.</li>
 <li>
-<strong>Visual Designer</strong>, <strong>Game Designer</strong>: <a href="http://twitter.com/ducky_tape">Eloise Macdonald-Meyer</a> – farming usurer, Super Taco deliverer, weditor, student, youngling. </li>
+<strong>Visual Designer</strong>, <strong>Game Designer</strong>: <a href="http://twitter.com/ducky_tape">Eloise Macdonald-Meyer</a> – farming usurer. </li>
 <li>
 <strong>Producer</strong>: <a href="http://twitter.com/parisba">Paris Buttfield-Addison</a> – game designer, mobile developer, PhD candidate at UTAS, author for O'Reilly Media, co-founder of Secret Lab.</li>
 <li>
 <strong>Data Wrangler</strong>: <a href="http://twitter.com/tsuite">Sebastian Cook</a> – game designer, developer.</li>
-</ul>
+</ul><h1>
+<a name="technical-overview" class="anchor" href="#technical-overview"><span class="octicon octicon-link"></span></a>Technical Overview</h1>
 
-<h1>
-<a name="play-the-game" class="anchor" href="#play-the-game"><span class="octicon octicon-link"></span></a>Play the Game</h1>
+<p>The game was developed using a combination of C# and JavaScript, compiled through the Mono development environment in the Unity game engine. The game runs on the web, through the Unity browser plugin, as well as natively on Mac, Windows, and Linux. That said, the game was designed in the spirit of tablet computers such as the iPad; in future development, the team plans to polish the game and deploy it to the popular tablet app marketplaces.</p>
 
-<ul>
-<li>On the web (<a href="http://unity3d.com/webplayer/">Unity web player required</a>) – TBD.</li>
-<li>Download for Mac – TBD.</li>
-<li>Download for Windows – TBD.</li>
-<li>Download for Ubuntu – TBD.</li>
-</ul>
+<p>Art and visual design for the game was developed by the team using Pixelmator for OS X and a graphics tablet, and a minimal amount of 3D modeling using Blender. The visual design of the game was inspired by the Energy Rating labels present on appliances in Australia.</p>
+
+<p>The Energy rating data was initially analysed using R to confirm that the distribution of ratings and features across products lent themselves to both easy comparisons between products and game mechanics. Following the data massaging in R, the data was manipulated in spreadsheets before finally being exported to JSON for use in the game.</p>
+
+<p>Git, via GitHub, was used for source code management, and our code is available under the BSD license via our repository at <a href="https://github.com/admiraldolphin/govhack2013">https://github.com/admiraldolphin/govhack2013</a> </p>
 
 <h2>
+<a name="software-and-asset-license" class="anchor" href="#software-and-asset-license"><span class="octicon octicon-link"></span></a>Software and Asset License</h2>
+
+<p>Copyright (c) 2013, Admiral Dolphin GovHack 2013 Team Members
+All rights reserved.</p>
+
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+
+<ul>
+<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
+<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
+</ul><p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+
+<h1>
+<a name="toolslanguages-used" class="anchor" href="#toolslanguages-used"><span class="octicon octicon-link"></span></a>Tools/Languages Used</h1>
+
+<ul>
+<li>Google Drive – collaborative planning, designing, sorting and review of interesting data sets.</li>
+<li>Unity – 3D development environment.</li>
+<li>JavaScript – for game code.</li>
+<li>C# – for game code.</li>
+<li>Photoshop </li>
+<li>JSON formatted data</li>
+<li>Spreadsheets</li>
+<li>Cintiq/graphics tablet</li>
+<li>Pixelmator</li>
+<li>Python – used for a web service to feed data to the game.</li>
+<li>R – statistical computing language, used for confirming the data's viability for the game design.</li>
+<li>Logic Pro – audio design for game.</li>
+</ul><h1>
+<a name="development-approach" class="anchor" href="#development-approach"><span class="octicon octicon-link"></span></a>Development Approach</h1>
+
+<ul>
+<li>Paper prototyping</li>
+<li>Iterative development of base game engine whilst analysing datasets for in-game suitability.</li>
+<li>Combining multiple datasets.</li>
+</ul><h1>
+<a name="resources" class="anchor" href="#resources"><span class="octicon octicon-link"></span></a>Resources</h1>
+
+<ul>
+<li>Source code and visual assets – <a href="https://github.com/admiraldolphin/govhack2013">https://github.com/admiraldolphin/govhack2013</a>
+</li>
+<li>Team video – TBD.</li>
+<li>Gallery of concept art – <a href="http://www.flickr.com/photos/parisba/sets/72157633868047061/">http://www.flickr.com/photos/parisba/sets/72157633868047061/</a>
+</li>
+<li>PDF of Game Rules – <a href="http://secretlab.com.au/Marvellous_Ultimate_Appliance_Rules.pdf">http://secretlab.com.au/Marvellous_Ultimate_Appliance_Rules.pdf</a>
+</li>
+<li>Photos of GovHack 2013 in Hobart taken by the team – <a href="http://lab.to/gh2013pics">http://lab.to/gh2013pics</a>
+</li>
+<li>Team page on GovHack 2013 Hackerspace – <a href="http://hackerspace.govhack.org/?q=groups/marvellous-ultimate-appliances">http://hackerspace.govhack.org/?q=groups/marvellous-ultimate-appliances</a>
+</li>
+</ul><h1>
+<a name="data-sets" class="anchor" href="#data-sets"><span class="octicon octicon-link"></span></a>Data Sets</h1>
+
+<ul>
+<li>
+<a href="http://opendata.linkdigital.com.au/dataset/appliance-energy-ratings">Appliance Energy Ratings</a> – energy usage and efficiency rating of common household appliances such as air conditioners.</li>
+<li>
+<a href="http://stat.abs.gov.au/Index.aspx?DataSetCode=NRP7#">National Regional Profile</a> - ABS data showing characteristics of regions and in comparing regions across Australia, used to set in game income levels.</li>
+<li>
+<a href="http://www.aemo.com.au/Electricity/Data/Price-and-Demand/Average-Price-Tables">Average Price for Australian Electricity</a> - AEMO data on average electricity prices in Australia.</li>
+</ul><h1>
+<a name="govhack-categories" class="anchor" href="#govhack-categories"><span class="octicon octicon-link"></span></a>GovHack Categories</h1>
+
+<ul>
+<li>Best use of data.gov.au</li>
+<li>Innovative pooling of ABS datasets with non-ABS datasets</li>
+<li>Greatest Potential for Research Impact (Intersect)</li>
+<li>Best of (General) </li>
+<li>Best High Bandwidth Application for Digital Humanities</li>
+<li>Innovative use of ABS</li>
+<li>Best visual storytelling</li>
+<li>National Beautiful Data Prize</li>
+<li>Best Student Project</li>
+<li>Spirit of GovHack</li>
+<li>Most Aesthetically Awesome Hack</li>
+</ul><h1>
+<a name="missing-features" class="anchor" href="#missing-features"><span class="octicon octicon-link"></span></a>Missing Features</h1>
+
+<ul>
+<li>We wanted to (and even got the basics of) the data parsed to collect realtime electrical data costs and use this to influence the cost of appliances on a location by location basis.</li>
+<li>We wanted to have people select their exact suburb and get given an income based on that suburbs average income.</li>
+<li>We wanted to put in house upgrades such as solar panels or insulation that would improve the appliances or make them cheaper, the efficacy of the upgrades was going to be based on real world weather data from bom.gov.au</li>
+</ul><h1>
+<a name="next-steps" class="anchor" href="#next-steps"><span class="octicon octicon-link"></span></a>Next Steps</h1>
+
+<p>In addition to to implementing the missing features noted above, we plan to complete the game for the iPad (and other tablet platforms). We feel that the most appropriate platform for a game such as this is a tablet. Additionally, we'll be polishing the user experience, art, visual design, sound design, and use of data to optimise the gameplay experience and tune the game balance for optimal fun.</p>
+
+<h1>
+<a name="slogans" class="anchor" href="#slogans"><span class="octicon octicon-link"></span></a>Slogans</h1>
+
+<ul>
+<li>Can you outsmart the capitalists, and Joe Blow next door and rise to the top of the heap?</li>
+<li>Far in the future, next week, this will influence your choices,  Learn the Lesson, Reap the Rewards.</li>
+<li>Spot the trap, bigger is not better, light footprint, cheap and dependable is what you need.</li>
+<li>Built to a price not to a standard.</li>
+</ul><hr><h2>
 <a name="game-rules" class="anchor" href="#game-rules"><span class="octicon octicon-link"></span></a>Game Rules</h2>
 
 <h2>
@@ -112,12 +202,14 @@ The phases are as follows:</p>
 </ol><h4>
 <a name="the-purchase-phase" class="anchor" href="#the-purchase-phase"><span class="octicon octicon-link"></span></a>The Purchase Phase</h4>
 
-<p>The Purchase Phase is the time to buy new Appliances and Extend your House. Both Players can buy any number of Appliances or House Extensions from the Store, assuming the can pay for them.</p>
+<p>The Purchase Phase is the time to buy new Appliances and Extend your House. Both Players can buy any number of Appliances or House Extensions from the Store, assuming the can pay for them.
+<img src="http://secretlab.com.au/gamepics/2.png" alt="The Purchase Phase"></p>
 
 <h4>
 <a name="the-battle-phase" class="anchor" href="#the-battle-phase"><span class="octicon octicon-link"></span></a>The Battle Phase</h4>
 
-<p>The Battle Phase represents a year of hard, back and forth, whitegood combat. It consists of two stages of attacking, defending and unflooping in the order shown below:</p>
+<p><img src="http://secretlab.com.au/gamepics/3.png" alt="The Battle Phase">
+The Battle Phase represents a year of hard back and forth whitegood combat and consists of two stages of attacings, defending and unflooping in the order shown below:</p>
 
 <ol>
 <li>Player 1 Attacks</li>
@@ -133,17 +225,20 @@ The phases are as follows:</p>
 </ol><h5>
 <a name="attack" class="anchor" href="#attack"><span class="octicon octicon-link"></span></a>Attack</h5>
 
-<p>In an Attack the Attacking Player chooses any number (including zero) unflooped Appliances and floops them. The total number of Energy Stas on the flooped Appliances is the attack value being dealt to the Defending Player.</p>
+<p>In an Attack the Attacking Player chooses any number (including zero) unflooped Appliances and floops them. The total number of Energy Stas on the flooped Appliances is the attack value being dealt to the Defending Player.
+<img src="http://secretlab.com.au/gamepics/6.png" alt="Attacking"></p>
 
 <h5>
 <a name="defend" class="anchor" href="#defend"><span class="octicon octicon-link"></span></a>Defend</h5>
 
-<p>In a Defense the Defending Player chooses any number (including zero) unflooped Appliances and floops them. The total Capacity of the flooped Appliances is the defense value to stop the Attack. If the difference between the Attack and Defense is greater than zero, the Defending Player looses Money.</p>
+<p><img src="http://secretlab.com.au/gamepics/5.png" alt="Defending">
+In a Defense the Defending Player chooses any number (including zero) unflooped Appliances and floops them. The total Capacity of the flooped Appliances is the defense value to stop the Attack. If the difference between the Attack and Defense is greater than zero, the Defending Player looses Money.</p>
 
 <h5>
 <a name="unfloop" class="anchor" href="#unfloop"><span class="octicon octicon-link"></span></a>Unfloop</h5>
 
-<p>In the unfloop stage, both players unfloop up to two flooped Appliances, showing their readiness to the continue the battle!</p>
+<p><img src="http://secretlab.com.au/gamepics/7.png" alt="Unflooping">
+In the unfloop stage, both players unfloop up to two flooped Appliances, showing their readiness to the continue the battle!</p>
 
 <h5>
 <a name="winning" class="anchor" href="#winning"><span class="octicon octicon-link"></span></a>Winning</h5>
@@ -209,7 +304,7 @@ Your House is your fortress and base of operations in the war against your neigh
 <p>Appliance Slots show how big your House is and how many Appliances you can hold. Each slot has a Type which corresponds to the Appliance Type, so a TV can only go into a TV slot, a Dishwasher into a Dishwasher slot and so on.</p>
 
 <h4>
-<a name="upgrading-your-house" class="anchor" href="#upgrading-your-house"><span class="octicon octicon-link"></span></a>Upgrading your House</h4>
+<a name="upgarding-your-house" class="anchor" href="#upgarding-your-house"><span class="octicon octicon-link"></span></a>Upgarding your House</h4>
 
 <p>Sometimes your House just isn't big enough, from the Store you are able to buy an Extension to your House. The cost of the Extension is removed from your Money.</p>
 
@@ -227,136 +322,7 @@ Your House is your fortress and base of operations in the war against your neigh
 <a name="flooping" class="anchor" href="#flooping"><span class="octicon octicon-link"></span></a>Flooping</h3>
 
 <p>Flooping and Unflooping is how you show which Appliances are engaged. To Floop an Appliance rotate it 90 degrees and to Unfloop, rotate it back 90 degrees. A flooped Appliance can not be used until it is Unflooped.</p>
-
-<h1>
-<a name="technical-overview" class="anchor" href="#technical-overview"><span class="octicon octicon-link"></span></a>Technical Overview</h1>
-
-<p>The game was developed using a combination of C# and JavaScript, compiled through the Mono development environment in the Unity game engine. The game runs on the web, through the Unity browser plugin, as well as natively on Mac, Windows, and Linux. That said, the game was designed in the spirit of tablet computers such as the iPad; in future development, the team plans to polish the game and deploy it to the popular tablet app marketplaces.</p>
-
-<p>Art and visual design for the game was developed by the team using Pixelmator for OS X and a graphics tablet, and a minimal amount of 3D modeling using Blender. The visual design of the game was inspired by the Energy Rating labels present on appliances in Australia.</p>
-
-<p>The Energy rating data was initially analysed using R to confirm that the distribution of ratings and features across products lent themselves to both easy comparisons between products and game mechanics. Following the data massaging in R, the data was manipulated in spreadsheets before finally being exported to JSON for use in the game.</p>
-
-<p>Git, via GitHub, was used for source code management, and our code is available under the BSD license via our repository at <a href="https://github.com/admiraldolphin/govhack2013">https://github.com/admiraldolphin/govhack2013</a> </p>
-
-<h1>
-<a name="toolslanguages-used" class="anchor" href="#toolslanguages-used"><span class="octicon octicon-link"></span></a>Tools/Languages Used</h1>
-
-<ul>
-<li>Google Drive – collaborative planning, designing, sorting and review of interesting data sets.</li>
-<li>Unity – 3D development environment.</li>
-<li>JavaScript – for game code.</li>
-<li>C# – for game code.</li>
-<li>Photoshop </li>
-<li>JSON formatted data</li>
-<li>Spreadsheets</li>
-<li>Cintiq/graphics tablet</li>
-<li>Pixelmator</li>
-<li>Python – used for a web service to feed data to the game.</li>
-<li>R – statistical computing language, used for confirming the data's viability for the game design.</li>
-<li>Logic Pro – audio design for game.</li>
-<li>Excel - used for maniuplation of datasets.</li>
-<li>ImageMagick - Automated image creation and image processing.</li>
-<li>AWK SED and other UNIX tools (eg. join) - used for Australian and ABS data maniuplation.</li>
-<li>Custom CSV to JSON parser - built in Objective-C using JSONKit and CHCSV</li>
-<li>iTween - used for coding.</li>
-</ul><h1>
-<a name="development-approach" class="anchor" href="#development-approach"><span class="octicon octicon-link"></span></a>Development Approach</h1>
-
-<ul>
-<li>Paper prototyping</li>
-<li>Iterative development of base game engine whilst analysing datasets for in-game suitability.</li>
-<li>Combining multiple datasets.</li>
-</ul><h1>
-<a name="resources" class="anchor" href="#resources"><span class="octicon octicon-link"></span></a>Resources</h1>
-
-<ul>
-<li>Source code and visual assets – <a href="https://github.com/admiraldolphin/govhack2013">https://github.com/admiraldolphin/govhack2013</a>
-</li>
-<li>Team video – TBD.</li>
-<li>Gallery of concept art – <a href="http://www.flickr.com/photos/parisba/sets/72157633868047061/">http://www.flickr.com/photos/parisba/sets/72157633868047061/</a>
-</li>
-<li>PDF of Game Rules – <a href="http://secretlab.com.au/Marvellous_Ultimate_Appliance_Rules.pdf">http://secretlab.com.au/Marvellous_Ultimate_Appliance_Rules.pdf</a>
-</li>
-<li>Photos of GovHack 2013 in Hobart taken by the team – <a href="http://lab.to/gh2013pics">http://lab.to/gh2013pics</a>
-</li>
-<li>Team page on GovHack 2013 Hackerspace – <a href="http://hackerspace.govhack.org/?q=groups/marvellous-ultimate-appliances">http://hackerspace.govhack.org/?q=groups/marvellous-ultimate-appliances</a>
-</li>
-</ul><h1>
-<a name="data-sets" class="anchor" href="#data-sets"><span class="octicon octicon-link"></span></a>Data Sets</h1>
-
-<ul>
-<li>
-<a href="https://auspost.com.au/postcodedata/full/user/12195/download.html?id=vv%2BQXF57F6G19EKVcPZHlB%2F1%2FANp6aHS7jdZoOtmumY%3D">Australian Post</a> - Used to identify localities to link with the ABS data for the calculation of a players starting capital.</li>
-<li>
-<a href="http://opendata.linkdigital.com.au/dataset/appliance-energy-ratings">Appliance Energy Ratings</a> – energy usage and efficiency rating of common household appliances such as air conditioners.</li>
-<li>
-<a href="http://stat.abs.gov.au/Index.aspx?DataSetCode=NRP7#">National Regional Profile</a> - ABS data showing characteristics of regions and in comparing regions across Australia, used to set in game income levels.</li>
-<li>
-<a href="http://www.aemo.com.au/Electricity/Data/Price-and-Demand/Average-Price-Tables">Average Price for Australian Electricity</a> - AEMO data on average electricity prices in Australia.</li>
-</ul><h1>
-<a name="govhack-categories" class="anchor" href="#govhack-categories"><span class="octicon octicon-link"></span></a>GovHack Categories</h1>
-
-<ul>
-<li>Best use of data.gov.au</li>
-<li>Innovative pooling of ABS datasets with non-ABS datasets</li>
-<li>Greatest Potential for Research Impact (Intersect)</li>
-<li>Best of (General) </li>
-<li>Best High Bandwidth Application for Digital Humanities</li>
-<li>Innovative use of ABS</li>
-<li>Best visual storytelling</li>
-<li>National Beautiful Data Prize</li>
-<li>Best Student Project</li>
-<li>Spirit of GovHack</li>
-<li>Most Aesthetically Awesome Hack</li>
-</ul><h1>
-<a name="missing-features" class="anchor" href="#missing-features"><span class="octicon octicon-link"></span></a>Missing Features</h1>
-
-<ul>
-<li>We wanted to (and even got the basics of) the data parsed to collect realtime electrical data costs and use this to influence the cost of appliances on a location by location basis.</li>
-<li>We wanted to have people select their exact suburb and get given an income based on that suburbs average income.</li>
-<li>We wanted to put in house upgrades such as solar panels or insulation that would improve the appliances or make them cheaper, the efficacy of the upgrades was going to be based on real world weather data from bom.gov.au</li>
-<li>We wanted to implement a system of appliance rental, while cheaper than purchasing an appliance, the appliance only lasts one turn. We also wanted to have an emergency store, accessible at any time, but the same appliances would be much more expensive than at the normal store, which can only be used during the buying phase.</li>
-<li>We wanted implement moving house, where you can buy a new house in a different neighbourhood. A house in a better neighbourhood, while expensive would increase the household income according to suburb average income data.</li>
-<li>We wanted to add in-game expanations, to show the players how the energy rating and capacity of appliances they choose gives them advantages against their neighbour.</li> 
- 
-</ul><h1>
-<a name="next-steps" class="anchor" href="#next-steps"><span class="octicon octicon-link"></span></a>Next Steps</h1>
-
-<p>In addition to to implementing the missing features noted above, we plan to complete the game for the iPad (and other tablet platforms). We feel that the most appropriate platform for a game such as this is a tablet. Additionally, we'll be polishing the user experience, art, visual design, sound design, and use of data to optimise the gameplay experience and tune the game balance for optimal fun.</p>
-
-<h1>
-<a name="slogans" class="anchor" href="#slogans"><span class="octicon octicon-link"></span></a>Slogans</h1>
-
-<ul>
-<li>Can you outsmart the capitalists, and Joe Blow next door and rise to the top of the heap?</li>
-<li>Far in the future, next week, this will influence your choices,  Learn the Lesson, Reap the Rewards.</li>
-<li>Spot the trap, bigger is not better, light footprint, cheap and dependable is what you need.</li>
-<li>Built to a price not to a standard.</li>
-</ul><hr>
-
-<h2>
-<a name="software-and-asset-license" class="anchor" href="#software-and-asset-license"><span class="octicon octicon-link"></span></a>Software and Asset License</h2>
-
-<p>Copyright (c) 2013, Admiral Dolphin GovHack 2013 Team Members
-All rights reserved.</p>
-
-<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
-
-<ul>
-<li>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</li>
-<li>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</li>
-</ul><p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
-
-<h2>
-<a name="contact-us" class="anchor" href="#contact-us"><span class="octicon octicon-link"></span></a>Contact Us</h2>
-
-<p>SecretLab</p>
-<ul>
-<li><a href="mailto:paris@secretlab.com.au">paris@secretlab.com.au</a></li>
-</ul>
-  
-</section>
+      </section>
     </div>
 
     <!-- FOOTER  -->
